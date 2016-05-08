@@ -56,7 +56,7 @@
 
   h1{
     font-family: 'Oswald', sans-serif;
-    font-size: 250%;
+    font-size: 350%;
     border: #c0dfd9 0.25ex solid;
     padding: 0.5ex;
     box-shadow:  0 0 2em grey, 0 0 2em white;
@@ -70,11 +70,12 @@
 
   h2{
     font-family: 'Oswald', sans-serif;
-    font-size: 200%;
+    font-size: 150%;
     color: white;
     text-align: center;
     width: 70%;
     margin: auto;
+    text-decoration: underline;
   }
 
 
@@ -278,6 +279,10 @@ video{
   display: inline;
   float: right;
   margin-left: 10px;
+}
+
+ul{
+  list-style-type: square;
 }
 
 @media (max-width: 800px) {
