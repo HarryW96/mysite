@@ -8,6 +8,7 @@ body{
 }
 
 header{
+  display: flex;
   background-color: #262626;
   height: 50px;
 }
@@ -18,6 +19,32 @@ h1{
 
 p{
   font-family: 'Josefin Slab', serif;
+}
+
+#menu{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+@media all and (max-width: 800px) {
+  #menu{
+    justify-content: space-around;
+  }
+
+  ul#menu li{
+    font-size: 150%;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  #menu{
+    flex-direction: column;
+  }
+  ul#menu li{
+    font-size: 180%;
+  }
 }
 
 ul#menu{
@@ -87,44 +114,58 @@ section.homepage-image h1{
 }
 
 section.homepage-opening{
-  height: 350px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   background-color: white;
+  padding: 55px;
 }
 
 section.homepage-opening h1{
+  position: relative;
   text-align: center;
   color: black;
   font-weight: bold;
   font-size: 200%;
-  padding-top: 100px;
-  padding-bottom: 10px;
+
 }
 
 section.homepage-opening p{
-  text-align: center;;
+  position: relative;
+  text-align: center;
   color: black;
   font-size: 150%;
-  padding: 5px;
-  width: 70%;
   margin: auto;
 }
 
+.about-me-wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
 section.homepage-about-me{
-  height: 350px;
+  position: relative;
   background-color: #262626
 }
 
 section.homepage-about-me h1{
   color: white;
-  padding-top: 45px;
   text-align: center;
   font-size: 200%;
+  padding-top: 30px;
 }
 
 section.homepage-about-me p{
   color: white;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   text-align: left;
   font-size: 150%;
   margin: auto;
@@ -220,13 +261,13 @@ p.blog-opening{
 
 img.blog-img{
   border-radius: 50%;
-  height: 450px;
-  width: 450px;
-  padding: 20px;
+  height: 300px;
+  width:300px;
   opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
   text-align: center;
+  position: relative;
 }
 
 img.blog-img:hover {
@@ -234,11 +275,22 @@ img.blog-img:hover {
 }
 
 p.post-preview{
+  position: relative;
   margin: auto;
   text-align: left;
   float: right;
-  width: 40%;
+  width: 35%;
   font-size: 150%;
-  padding-top: 80px;
-  padding-right: 270px;
+  padding-right: 350px;
+}
+
+.blog-post-wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
