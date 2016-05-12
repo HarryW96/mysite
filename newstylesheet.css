@@ -78,6 +78,8 @@ ul a:active{
   height: 865px;
   position: relative;
   -webkit-filter: grayscale(100%);
+  border-bottom: solid;
+  border-color: #991414;
 }
 
 #overlay-image{
@@ -145,6 +147,8 @@ section.homepage-about-me p{
   text-align: center;
   font-size: 150px;
   color: #991414;
+  border-top: solid;
+  border-color: #262626;
 }
 
 .image-wrap{
@@ -184,6 +188,8 @@ section.contact-me{
   align-content: center;
   height: 20rem;
   background-color: #991414;
+  border-top: solid;
+  border-color: #262626;
 }
 
 section.contact-me h1{
@@ -220,12 +226,14 @@ i{
 }
 a:link {
   color: #262626;
+  text-decoration: none;
 }
 a:visited {
   color: #262626;
 }
 a:hover {
   color: #991414;
+  text-decoration: underline;
 }
 a:active {
   color: #262626;
