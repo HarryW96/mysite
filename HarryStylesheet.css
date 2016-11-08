@@ -1,0 +1,32 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.fa{
+  padding: 1rem;
+}
+
+.fa:hover{
+  color: #ff5050;
+}
+
+h1{
+  padding-top: 2rem;
+}
+
+h2{
+  padding-top: 1rem;
+}
+
+p{
+  padding-top: 1rem;
+}
+
+a:link{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
